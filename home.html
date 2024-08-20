@@ -1,0 +1,335 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Plant Disease Detection
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+img {
+  display: block;
+  border: 5px solid #555;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<br>
+<img src="https://klh.edu.in/wp-content/uploads/2020/06/LOG999.png" style="width:40%;">
+<div class='mobile p-5'>
+  <div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+      <b style="color: green;"><h1><b>&#127801KLH Leaf Disease Detector&#127801</b></h1></b></button>
+      <h5 class="display-4" style="padding-top: 2%;font-weight: 100;color:red;"><b>Note✍🏻</b></h5>
+      <p class="lead" style="font-weight: 500;color: black;">It's a Web-Application that works only in PC</p>
+      <p class="lead" style="font-weight: 500;color: black;">We Developed this application only to help farmers and develop Agriculture sector in India.</p>
+      <p class="lead" style="font-weight: 500;color: black;">Thank You 🤝</p>
+    </div>
+</div>
+</div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/10 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<h3 align="center"><b>Welcome To Our Website Of Agriculture</b></h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="/static/images/A6.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="/static/images/A1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="/static/images/A2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="/static/images/A10.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="/static/images/A3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="/static/images/A4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="/static/images/A9.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="/static/images/A5.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="/static/images/A8.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="/static/images/A7.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>🍁Leaf Disease
+                Detection🍁 </b></h1>
+        <p class="lead" style="font-weight: 500;color: black;">This AI plant disease detector Will Help To Detect Disease From Following Fruits And Vegetables</p>
+    </div>
+</div>
+
+<center class="laptop">
+    <a href="/index">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black;">AI Leaf Disease Detector</b></button>
+</a>
+</center>
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://post.healthline.com/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Apple</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.supermarketperimeter.com/ext/resources/0430-blueberries.png?t=1588260305&width=1080" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Blueberry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/health_benefits_of_cherries_slideshow/1800x1200_health_benefits_of_cherries_slideshow.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Cherry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.foodrepublic.com/img/gallery/corn-is-a-fruit-but-its-also-a-grain-and-a-vegetable/intro-1688390573.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Corn</p></center>
+        </div>
+    </div>
+</div>
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://i.ndtvimg.com/i/2015-09/grapes_625x350_61443376353.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Grape</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.irishtimes.com/polopoly_fs/1.3923226.1560339148!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Orange</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/the_health_benefits_of_peaches_slideshow/thinkstock_rf_peaches.jpg?resize=650px:*" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Peach</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.chilipeppermadness.com/wp-content/uploads/2024/02/Bell-Peppers1.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Pepper Bell</p></center>
+        </div>
+    </div>
+</div>
+
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-111140,msid-72862126/potato-getty.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Potato</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/326/326272/raspberries-with-ketones-in-a-bowl.jpg?w=1155&h=1541" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Raspberry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://m.economictimes.com/thumb/msid-66988154,width-1200,height-900,resizemode-4,imgsize-211276/soyabean-agencies.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Soybean</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://post.healthline.com/wp-content/uploads/2020/08/squash-fruit-or-vegetable-732x549-thumbnail-732x549.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Squash</p></center>
+        </div>
+    </div>
+</div>
+
+<center class="laptop">
+<div class="row p-5">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 45%;height: 92%;">
+          <img src="https://images.indianexpress.com/2020/02/strawberry-1200.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Strawberry</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 45%;height: 92%;">
+
+          <img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/tomatoes-1296x728-feature.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Tomato</p></center>
+        </div>
+    </div>
+</div>
+</center>
+
+{% endblock body %}
